@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>The Cocktails</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="src/styles/style.css">
+
+</head>
+<body>
+<header>
+    <nav id="appBar" class="navbar navbar-expand-sm bg-warning">
+        <a class="navbar-brand" href="#">
+            <img src="https://cdn-icons.flaticon.com/png/512/3086/premium/3086007.png?token=exp=1635289011~hmac=8acc479e2d6dec8e2cd814747cfddbff" alt="Logo" style="width:40px;">
+            <span class="brand-text">The Cocktails</span>
+        </a>
+    </nav>
+</header>
+<main class="container">
+    <div class="row justify-content-center mt-4" id="search-container">
+        <div class="col-12 col-md-10 col-lg-8">
+            <form class="card card-sm">
+                <div class="card-body row no-gutters align-items-center">
+                    <div class="col">
+                        <input class="form-control form-control-lg form-control-borderless" id="searchElement" type="search" placeholder="Search cocktails">
+                    </div>
+                    <div class="col-auto">
+                        <button class="btn btn-lg btn-warning" id="searchButtonElement" type="submit">Search</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="cocktailList" class="row mt-3 justify-content-center">
+        <!-- <div class="card">
+            <img class="card-img-top" src="https://cdn-icons.flaticon.com/png/512/3086/premium/3086007.png?token=exp=1635289011~hmac=8acc479e2d6dec8e2cd814747cfddbff" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            </div>
+        </div> -->
+        <!-- <div class="alert alert-light" role="alert">
+            This is a light alert—check it out!
+        </div> -->
+    </div>
+</main>
+<script src="src/script/data/clubs.js"></script>
+<script src="src/script/data/data-source.js"></script>
+<script src="src/script/view/main.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
